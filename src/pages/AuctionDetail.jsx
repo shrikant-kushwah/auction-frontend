@@ -123,7 +123,7 @@ const AuctionDetail = () => {
       <p className="mb-2 text-gray-700">{auction.description ?? 'No Description'}</p>
 
       <p className="text-sm text-green-600 mt-1">
-        Current Bid: ₹
+        Current Bid: $
         {typeof auction.currentBid === 'number' && auction.currentBid > 0
           ? auction.currentBid
           : auction.startingBid ?? 'N/A'}
