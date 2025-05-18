@@ -22,7 +22,7 @@ const MyAuctions = () => {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.get(`${API_URL}/api/auctions?createdByMe=true&page=${page}&limit=${limit}`, {
+      const res = await axios.get(`${API_URL}/auctions?createdByMe=true&page=${page}&limit=${limit}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setAuctions(res.data?.auctions || []);
