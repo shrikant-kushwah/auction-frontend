@@ -3,8 +3,9 @@ import { useSelector } from 'react-redux';
 import { selectUserToken } from '../redux/slice/authSlice';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import { USER_API_END_POINT } from '../redux/constants/userConstants';
 
-const API_URL = import.meta.env.VITE_API_BASE_URL;
+const API_URL = USER_API_END_POINT;
 
 const MyAuctions = () => {
   const token = useSelector(selectUserToken);
