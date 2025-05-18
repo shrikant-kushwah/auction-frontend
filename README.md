@@ -1,4 +1,4 @@
-# Auctionary
+# Auctionary-Frontend
 
 A modern, real-time auction platform where users can explore, bid, and create auctions. Built with React, Vite, Tailwind CSS, Redux, and a Node.js/Express/MongoDB backend.
 
